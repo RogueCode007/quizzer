@@ -4,29 +4,18 @@
 3. After successful installation, run "npm run serve", a server will be launched and the application will be live on port 8000 on your local machine 
 
 
-#### Steps to deploy the application on heroku: 
-1. Run 'git init' to initialize a remote repository.
-2. Run 'git add .' to add all your project files.
+#### Steps to deploy the application on netlify: 
+1. Create a netlify account and give  netlify access to your github repositories
+2. Create a new repository on github, copy the repo URL,usually ends with '.git'
+3. In your terminal , run 'git add .' to add all your project files.
 3. Run 'git commit', then enter a commit message.
-4. Create a 'static.json' file in the root of the project folder and paste the following code
-###
-{
-  "root": "dist",
-  "clean_urls": true,
-  "routes": {
-    "/**": "index.html"
-  }
-}
-###
-5. Add the newly added file to git by running 'git add static.json' and also run 'git commit'
-6. Assuming you have heroku CLI setup on your PC. Run the following code ;
-heroku login
-heroku create
-heroku buildpacks:add heroku/nodejs
-heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
-git push heroku master
+4. Run 'git remote add origin <repourl>' you copied in step 2
+5. Push your changes by running 'git push -f origin master'
+6. Now on your netlify dashboard, choose to deploy an app from github and select the repository to which you just pushed your project files to.
+7. Set the build command as npm run build or yarn run build as the case may be
+8. Set the publish directory as dist
+9. Hit deploy and netlify will build and host your site live. Any new changes made and pushed to that repo will also automatically be deployed by netlify
 
-7. Heroku will build and deploy your application and provide the live address.
 
 
 ### Technologies used include;
