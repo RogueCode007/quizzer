@@ -231,7 +231,7 @@
         <input type="numeric" v-model="phoneNumber" class="outline-none w-full" placeholder="Enter your phone number">
       </div>
     </div>
-    <p @click="startQuiz" class="cursor-pointer text-center mt-6 w-3/5 mx-auto rounded-lg text-white bg-purple-800 py-2">Start Quiz</p>
+    <p @click="startQuiz" class="cursor-pointer text-center mt-12 w-3/5 mx-auto rounded-lg text-white bg-purple-800 py-2">Start Quiz</p>
     </div>
   </div>
 </template>
