@@ -36,3 +36,7 @@
 7. I would also fetch and fil the app data from a get API request to the backend rather than hardcoding it in.
 8. I would make out time to add comments to my code if i had more time
 9. I also feel the UI can be improved
+
+
+## LIVE SITE
+https://serene-kare-96d234.netlify.app/
