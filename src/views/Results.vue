@@ -23,7 +23,7 @@ export default {
       return this.$store.state.score
     },
     totalQuestionsCount(){
-      return this.$store.state.data.length - 1
+      return this.$store.state.data.length 
     }
   },
   methods:{

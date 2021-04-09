@@ -46,7 +46,7 @@ export default {
 
 <style>
 .question-box{
-  min-height: 63vh;
+  min-height: 65vh;
   width: 90%;
   margin: 40px auto;
   padding: 30px 20px;
